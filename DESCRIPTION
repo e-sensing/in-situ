@@ -1,0 +1,29 @@
+Package: inSitu
+Type: Package
+Title: inSitu e-sensing data sets
+Version: 1.0.0
+Date: 2018-08-08
+Authors@R: c(person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara@inpe.br'), 
+             person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'),
+             person('Pedro', 'Andrade', role = c('aut', 'ctb'), email = 'pedro.andrade@inpe.br'),
+             person('Gilberto', 'Queiroz', role = c('aut', 'ctb'), email = 'gilberto.queiroz@inpe.br'),
+             person('Alber', 'Sanchez', role = c('ctb')),
+             person('Adeline', 'Marinho', role = c('ctb')),
+             person('Lorena', 'Santos', role = c('ctb'))
+             )
+Maintainer: Gilberto Camara <gilberto.camara@inpe.br>
+Description: This project contains in situ data sets used in the e-sensing projec. 
+    These data sets consists of time series of selected locations which are used to 
+    train the statistical learning models used in the e-sensing studies.
+Depends: R (>= 3.4)
+URL: https://github.com/e-sensing/in-situ/
+BugReports: https://github.com/e-sensing/in-situ/issues
+License: GPL-2 | file LICENSE
+Imports: 
+    tibble
+ByteCompile: true
+LazyData: true
+RoxygenNote: 6.0.1
+Collate: 
+    'data.R'
+    'zzz.R'

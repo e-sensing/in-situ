@@ -6,7 +6,7 @@
 #' @name cerrado_124K_16classes_6bands
 #' 
 #' @usage 
-#' data("124K_16classes_6bands")
+#' data("cerrado_124K_16classes_6bands")
 #' 
 #' @format A `sits` tibble with 124K samples. A `sits` tibble contains the following meta-data: 
 #'   longitude (East-west coordinate of the time series sample in WGS 84),
