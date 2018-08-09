@@ -1,0 +1,52 @@
+citFooter("The BibTeX versions can be obtained using toBibtex(citation(\"inSitu\")).")
+citEntry(entry = "Misc",
+         title        = "Land cover samples time series from Brazilian Cerrado biome",
+         author       = personList(as.person("Gilberto Camara"),
+                                   as.person("Claudio Almeida"),
+                                   as.person("Alexandre Coutinho"),
+                                   as.person("Julio Esquerdo"),
+                                   as.person("Joao Antunes"),
+                                   as.person("Rodrigo Begotti"),
+                                   as.person("Ieda Sanches"),
+                                   as.person("Damien Arvor"),
+                                   as.person("Michelle Picoli"),
+                                   as.person("Rolf Simoes")),
+         organization = "INPE - Brazilian National Institute for Space Research",
+         address      = "Sao Jose dos Campos, Brazil",
+         year         = "2018",
+         url          = "https://github.com/e-sensing/inSitu",
+         header       = "To cite 'cerrado_124K_16classes_6bands' dataset in publications use:",
+         textVersion  =
+             paste("Camara, Gilberto; Almeida, Claudio; Coutinho, Alexandre;",
+                   "Esquerdo, Julio; Antunes, Joao; Begotti, Rodrigo;",
+                   "Sanches, Ieda; Arvor, Damien; Picoli, Michelle;  Simoes, Rolf (2018).",
+                   "Land cover samples time series from Brazilian Cerrado biome.",
+                   "URL https://github.com/e-sensing/inSitu.")
+)
+
+citEntry(entry = "Misc",
+         title        = "Land cover change maps for Mato Grosso State in Brazil: 2001-2016, links to files",
+         author       = personList(as.person("Gilberto Camara"),
+                                   as.person("Michelle Picoli"),
+                                   as.person("Rolf Simoes"),
+                                   as.person("Adeline Maciel"),
+                                   as.person("Alexandre Carvalho"),
+                                   as.person("Alexandre Coutinho"),
+                                   as.person("Julio Esquerdo"),
+                                   as.person("Joao Antunes"),
+                                   as.person("Rodrigo Begotti"),
+                                   as.person("Damien Arvor")),
+         organization = "INPE - Brazilian National Institute for Space Research",
+         address      = "Sao Jose dos Campos, Brazil",
+         year         = "2017",
+         url          = "https://doi.org/10.1594/PANGAEA.881291",
+         header       = "To cite 'cerrado_2K_16classes_4bands' dataset in publications use:",
+         textVersion  =
+             paste("Camara, Gilberto; Picoli, Michelle; Simoes, Rolf; Maciel, Adeline;",
+                   "Carvalho, Alexandre; Coutinho, Alexandre;",
+                   "Esquerdo, Julio; Antunes, Joao; Begotti, Rodrigo;",
+                   "Arvor, Damien (2017).",
+                   "Land cover change maps for Mato Grosso State in Brazil: 2001-2016, links to files.",
+                   "URL https://doi.org/10.1594/PANGAEA.881291")
+)
+
