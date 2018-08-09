@@ -1,11 +1,11 @@
-# On load
-.onAttach = function(lib, pkg){
-    packageStartupMessage(
-        sprintf("Loaded inSitu e-sensing data sets. V%s. Use citation(\"inSitu\") for use in publication.",
-                utils::packageDescription("inSitu")$Version)
-    )
+# function called when package is loaded
+.onAttach <- function(lib, pkg){
+  packageStartupMessage(
+      sprintf("Loaded inSitu e-sensing data sets v%s. Use citation(\"inSitu\") for use in publication.",
+              utils::packageDescription("inSitu")$Version)
+      )
 }
 
+# imports tibble to print a nice sits tibble.
 #' @import tibble
-#'
 NULL
