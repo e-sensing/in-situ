@@ -4,10 +4,13 @@
 \alias{qgis_style}
 \title{Predefined QGIS Style}
 \usage{
-qgis_style(dataset)
+qgis_style(dataset, qml_file = "")
 }
 \arguments{
-\item{dataset}{(string) one valid data set provided by inSitu.}
+\item{dataset}{(character) one valid data set provided by inSitu.}
+
+\item{qml_file}{(character) file to save the QML. If "" the function prints the QML
+to the standard output.}
 }
 \value{
 nothing.
