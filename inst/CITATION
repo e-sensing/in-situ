@@ -20,7 +20,32 @@ citEntry(entry = "Misc",
              paste("Camara, Gilberto; Almeida, Claudio; Coutinho, Alexandre;",
                    "Esquerdo, Julio; Antunes, Joao; Begotti, Rodrigo;",
                    "Sanches, Ieda; Arvor, Damien; Picoli, Michelle;  Simoes, Rolf (2018).",
-                   "Land cover samples time series from Brazilian Cerrado biome.",
+                   "Land cover time series samples of Brazilian Cerrado biome (124K, 16 classes).",
+                   "URL https://github.com/e-sensing/inSitu.")
+)
+
+citEntry(entry = "Misc",
+         title        = "Land cover samples time series from Brazilian Cerrado biome",
+         author       = personList(as.person("Gilberto Camara"),
+                                   as.person("Claudio Almeida"),
+                                   as.person("Alexandre Coutinho"),
+                                   as.person("Julio Esquerdo"),
+                                   as.person("Joao Antunes"),
+                                   as.person("Rodrigo Begotti"),
+                                   as.person("Ieda Sanches"),
+                                   as.person("Damien Arvor"),
+                                   as.person("Michelle Picoli"),
+                                   as.person("Rolf Simoes")),
+         organization = "INPE - Brazilian National Institute for Space Research",
+         address      = "Sao Jose dos Campos, Brazil",
+         year         = "2018",
+         url          = "https://github.com/e-sensing/inSitu",
+         header       = "To cite 'cerrado_64K_13classes_6bands' dataset in publications use:",
+         textVersion  =
+             paste("Camara, Gilberto; Almeida, Claudio; Coutinho, Alexandre;",
+                   "Esquerdo, Julio; Antunes, Joao; Begotti, Rodrigo;",
+                   "Sanches, Ieda; Arvor, Damien; Picoli, Michelle;  Simoes, Rolf (2018).",
+                   "Land cover time series samples of Brazilian Cerrado biome (64K, 13 classes).",
                    "URL https://github.com/e-sensing/inSitu.")
 )
 
@@ -40,7 +65,7 @@ citEntry(entry = "Misc",
          address      = "Sao Jose dos Campos, Brazil",
          year         = "2017",
          url          = "https://doi.org/10.1594/PANGAEA.881291",
-         header       = "To cite 'cerrado_2K_16classes_4bands' dataset in publications use:",
+         header       = "To cite 'br_mt_2K_9classes_6bands' dataset in publications use:",
          textVersion  =
              paste("Camara, Gilberto; Picoli, Michelle; Simoes, Rolf; Maciel, Adeline;",
                    "Carvalho, Alexandre; Coutinho, Alexandre;",

@@ -17,8 +17,11 @@ Imports:
     tibble
 ByteCompile: true
 LazyData: true
-RoxygenNote: 6.0.1
+Encoding: UTF-8
+Depend:
+    tibble
 Collate: 
     'data.R'
     'qgis_style.R'
     'zzz.R'
+RoxygenNote: 6.1.0

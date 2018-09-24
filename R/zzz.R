@@ -7,5 +7,5 @@
 }
 
 # imports tibble to print a nice sits tibble.
-#' @import tibble
+#' @importFrom tibble tibble
 NULL

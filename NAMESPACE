@@ -2,4 +2,4 @@
 
 export(list_datasets)
 export(qgis_style)
-import(tibble)
+importFrom(tibble,tibble)
