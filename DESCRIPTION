@@ -1,7 +1,7 @@
 Package: inSitu
 Type: Package
 Title: inSitu e-sensing data sets
-Version: 1.0.0
+Version: 1.1.0
 Date: 2018-08-08
 Authors@R: c(person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara@inpe.br'), 
              person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'))
