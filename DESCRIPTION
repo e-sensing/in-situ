@@ -18,8 +18,6 @@ Imports:
 ByteCompile: true
 LazyData: true
 Encoding: UTF-8
-Depend:
-    tibble
 Collate: 
     'data.R'
     'qgis_style.R'
