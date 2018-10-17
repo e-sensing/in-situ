@@ -75,3 +75,29 @@ citEntry(entry = "Misc",
                    "URL https://doi.org/10.1594/PANGAEA.881291")
 )
 
+citEntry(entry = "Misc",
+         title        = "Land cover change maps for Mato Grosso State in Brazil: 2001-2017 (version 2), links to files",
+         author       = personList(as.person("Gilberto Camara"),
+                                   as.person("Michelle Picoli"),
+                                   as.person("Rolf Simoes"),
+                                   as.person("Adeline Maciel"),
+                                   as.person("Alexandre Carvalho"),
+                                   as.person("Alexandre Coutinho"),
+                                   as.person("Julio Esquerdo"),
+                                   as.person("Joao Antunes"),
+                                   as.person("Rodrigo Begotti"),
+                                   as.person("Damien Arvor"),
+                                   as.person("Lorena Santos")),
+         organization = "INPE - Brazilian National Institute for Space Research",
+         address      = "Sao Jose dos Campos, Brazil",
+         year         = "2018",
+         url          = "https://github.com/e-sensing/inSitu",
+         header       = "To cite 'br_mt_1_8K_9classes_6bands' dataset in publications use:",
+         textVersion  =
+             paste("Camara, Gilberto; Picoli, Michelle; Simoes, Rolf; Maciel, Adeline;",
+                   "Carvalho, Alexandre; Coutinho, Alexandre;",
+                   "Esquerdo, Julio; Antunes, Joao; Begotti, Rodrigo;",
+                   "Arvor, Damien; Santos, Lorena (2017).",
+                   "Land cover change maps for Mato Grosso State in Brazil: 2001-2017 (version 2), links to files.",
+                   "URL https://github.com/e-sensing/inSitu.")
+)
