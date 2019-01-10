@@ -15,9 +15,7 @@ data(prodes_samples_interpolated)
 \description{
 A dataset containing a tibble with time series sampled on the
 brazilian Amazon. The time series come from Landsat 8 Collection images. The
-clouds in the images are filled in using the StarFM image fusion model.
-StarFM builds a statistical model between MODIS and LANDSAT images at time
-t1 which is later applied to MODIS images at time t0. The result is a
-prediction of a Landsat 8 image at t0.
+clouds in the images are filled in using billinear resampled MODIS images
+(MOD13Q1 and MYD13Q1) of the closest in terms of place and date.
 }
 \keyword{datasets}
