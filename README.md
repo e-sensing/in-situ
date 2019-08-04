@@ -1,17 +1,103 @@
 # in-situ data sets
-This project contains in situ data sets used in the e-sensing projec. These data sets consists of time series of selected locations which are used to train the statistical learning models used in the e-sensing studies.
+This project contains in situ data sets used in the e-sensing project. These data sets consists of time series of selected locations which are used to train the statistical learning models used in the e-sensing studies. 
 
-## Data description
+To load these data sets:
 
-### Cerrado Samples
+`devtools::install_github("e-sensing/inSitu")`
 
-`cerrado_124K_16classes_6bands`: 124K samples from many sources. 
-It has 16 classes (_Araguaia_, _Campo\_Cerrado_, _Cerradao_, _Cerrado_, _Cerrado\_Rupestre_, 
-_Ciliary\_Forest_, _Dunas_, _Fallow_Cotton_, _Millet\_Cotton_, _Pasture_, _Perennial\_Crop_, 
-_Semi\_Perennial\_Crop_, _Soy\_Corn_, _Soy\_Cotton_, _Soy\_Fallow_, _Soy\_Millet_). 
-Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+## Description of the "data" directory
+
+#### Data format 
+
+All data sets in the "data" directory are tibbles with satellite image time series, with the following columns: 
+
+- longitude (East-west coordinate of the time series sample in WGS 84),
+- latitude (North-south coordinate of the time series sample in WGS 84),
+- start_date (initial date of the time series),
+- end_date (final date of the time series),
+- label (the class label associated to the sample),
+- cube (the name of the image data cube associated with the data), and
+- time_series ( list containing a tibble with the values of the time series).
+
+#### Cerrado Land Use and Land Cover Samples: 16 classes, 6 bands, 124,000 time series
+
+A dataset containing a sits tibble with 124 K time series samples from Brazilian Cerrado biome. The samples are from many sources. It has 16 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Ciliary_Forest", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Perennial_Crop", "Semi_Perennial_Crop", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+
+Usage: `data("cerrado_124K_16classes_6bands")`
+
+#### Cerrado  Land Use and Land Cover Samples: 13 classes, 6 bands, 64,000 time series
+
+A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 13 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+
+Usage: `data("cerrado_64K_13classes_6bands")`
+
+#### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 9 classes, 6 bands, 2,000 time series
+
+A dataset containing a sits tibble with time series samples from Brazilian Mato Grosso State (Amazon and Cerrado biomes). It has 9 classes ("Cerrado", "Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet").  Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+
+Source: Câmara, Gilberto; Picoli, Michelle; Maciel, Adeline; Simoes, Rolf; Santos, Lorena; Andrade, Pedro R; Ferreira, Karine; Begotti, Rodrigo; Sanches, Ieda; Carvalho, Alexandre X Y; Coutinho, Alexandre; Esquerdo, Julio; Antunes, Joao; Arvor, Damien (2019): Land cover change maps for Mato Grosso State in Brazil: 2001-2017 (version 3). PANGAEA, https://doi.org/10.1594/PANGAEA.899706
+
+Usage: `data("br_mt_2K_9classes_6bands")`
+
+#### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 9 classes, 6 bands, 1,800 time series
+
+A dataset containing a sits tibble with time series samples from Brazilian Mato Grosso State (Amazon and Cerrado biomes). The samples are from many sources. It has 9 classes ("Cerrado", "Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+
+Source: Câmara, Gilberto; Picoli, Michelle; Maciel, Adeline; Simoes, Rolf; Santos, Lorena; Andrade, Pedro R; Ferreira, Karine; Begotti, Rodrigo; Sanches, Ieda; Carvalho, Alexandre X Y; Coutinho, Alexandre; Esquerdo, Julio; Antunes, Joao; Arvor, Damien (2019): Land cover change maps for Mato Grosso State in Brazil: 2001-2017 (version 3). PANGAEA, https://doi.org/10.1594/PANGAEA.899706
+
+Usage: `data("br_mt_1_8K_9classes_6bands")`
+
+## Description of the "inst/extdata" directory
+
+#### PRODES 2001 Amazonia forest mask
+
+A TIF file containing a mask of the areas marked as forest by the Amazon deforestation monitoring PRODES project for the year 2001. This mask is useful to set the initial stage of forest areas for studies that use the MODIS data, that starts in 2000. All areas identified as "forest" in the analysis of MODIS data which are outside the forest mask should be marked as "secondary vegetation". 
+
+Source: INPE PRODES project (http://terrabrasilis.dpi.inpe.br/en/home-page/)
+
+Usage: `mask <- system.file("extdata/MT/masks", "PRODES_2001_forest.tif", package = "inSitu")`
+
+#### PRODES 2000 Cerrado natural vegetation mask
+
+A TIF file containing a mask of the areas marked as forest by the Cerrado deforestation monitoring PRODES project for the year 2000. This mask is useful to set the initial stage of forest areas for studies that use the MODIS data, that starts in 2000. All areas identified as "forest" in the analysis of MODIS data which are outside the forest mask should be marked as "secondary vegetation". 
+
+Source: INPE PRODES project (http://terrabrasilis.dpi.inpe.br/en/home-page/)
+
+Usage: `mask <- system.file("extdata/MT/masks", "PRODES-Cerrado_2000.tif", package = "inSitu")`
+
+#### Mato Grosso water mask
+
+A TIF file containing a mask of the areas marked as water in the state of Mato Grosso. 
+
+Source: Pekel, J. F., Cottam, A., Gorelick, N. & Belward, A. S. High-resolution
+mapping of global surface water and its long-term changes. Nature
+540, 418–422 (2016).
+
+Usage: `mask <- system.file("extdata/MT/masks", "water.tif", package = "inSitu")`
+
+#### Mato Grosso urban area mask
+
+A TIF file containing a mask of the areas marked as urban in the state of Mato Grosso. 
+
+Source: Sparovek, G., Barreto, A. G. O. P., Matsumoto, M. & Berndes, G. Effects
+of governance on availability of land for agriculture and conservation in
+Brazil. Environmental Science & Technology 49, 10285–10293 (2015).
+
+Usage: `mask <- system.file("extdata/MT/masks", "urban_area.tif", package = "inSitu")`
+
+#### Mato Grosso sugarcane mask
+
+A set of TIF files containing masks of areas marked as sugarcane in the state of Mato Grosso.
+
+Usage: `mask <- system.file("extdata/MT/masks/sugarcane", "2014.tif", package = "inSitu")`
+
+For different years, please replace "2014.tif" in the command above to get the required year.
+
+#### Sinop EVI and NDVI images for year 2014
+
+TIF files containing 23 EVI and NDVI MOD13Q1 images for the period 2013-09-14 to 2014-08-29, covering the agricultural year in the city of Sinop (Mato Grosso). These files with associated timeline are used to test and validate the algorithms in the R package "sits". 
 
 Usage: 
-```
-data("cerrado_124K_16classes_6bands")
-```
+`evi.tif <- system.file("extdata/Sinop", "Sinop_evi_2014.tif", package = "inSitu")`
+`ndvi.tif <- system.file("extdata/Sinop", "Sinop_ndvi_2014.tif", package = "inSitu")`
+`timeline <- system.file("extdata/Sinop", "timeline_2014.txt", package = "inSitu")`
