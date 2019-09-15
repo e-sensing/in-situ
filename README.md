@@ -19,15 +19,21 @@ All data sets in the "data" directory are tibbles with satellite image time seri
 - cube (the name of the image data cube associated with the data), and
 - time_series ( list containing a tibble with the values of the time series).
 
+#### Amazonia Land Use and Land Cover Samples: 12 classes, 4 bands, 33,000 time series
+
+A dataset containing a sits tibble with 33 K time series samples from Brazilian Amazonia biome. The samples are from the work of Ana Rorato, combined with agricultural data provided by EMBRAPA. There are samples of 12 classes ("Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture", "Savanna", "Savanna_Roraima", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet", "Soy_Sunflower" and "Wetlands"). Each time series covers 12 months (23 data points) from the MOD13Q1 product, in 4 bands ("ndvi", "evi", "nir", "mir").
+
+Usage: `data("amazonia_33K_12classes_4bands")`
+
 #### Cerrado Land Use and Land Cover Samples: 16 classes, 6 bands, 124,000 time series
 
-A dataset containing a sits tibble with 124 K time series samples from Brazilian Cerrado biome. The samples are from many sources. It has 16 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Ciliary_Forest", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Perennial_Crop", "Semi_Perennial_Crop", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+A dataset containing a sits tibble with 124 K time series samples from Brazilian Cerrado biome. The samples are from many sources. There are samples of 16 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Ciliary_Forest", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Perennial_Crop", "Semi_Perennial_Crop", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from the MOD13Q1 product, and has 6 bands.
 
 Usage: `data("cerrado_124K_16classes_6bands")`
 
 #### Cerrado  Land Use and Land Cover Samples: 13 classes, 6 bands, 64,000 time series
 
-A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 13 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 13 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
 
 Usage: `data("cerrado_64K_13classes_6bands")`
 

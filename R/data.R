@@ -11,7 +11,8 @@
 #'
 #' @export
 list_datasets <- function() {
-  return(c("cerrado_124K_16classes_6bands",
+  return(c("amazonia_33K_12classes_4bands",
+           "cerrado_124K_16classes_6bands",
            "cerrado_64K_13classes_6bands",
            "br_mt_2K_9classes_6bands",
            "br_mt_1_8K_9classes_6bands",
@@ -130,7 +131,7 @@ NULL
 #'
 NULL
 
-#' @title Sample time-series from the PRODES system using a fusion model. 
+#' @title Sample time-series from the PRODES system using a fusion model.
 #'
 #' @description A dataset containing a tibble with time series sampled on the
 #' brazilian Amazon. The time series come from Landsat 8 Collection images. The
