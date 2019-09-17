@@ -31,13 +31,13 @@ A dataset containing a sits tibble with 124 K time series samples from Brazilian
 
 Usage: `data("cerrado_124K_16classes_6bands")`
 
-#### Cerrado  Land Use and Land Cover Samples: 13 classes, 6 bands, 64,000 time series
+#### Cerrado  Land Use and Land Cover Samples: 14 classes, 4 bands, 61,000 time series
 
-A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 13 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 14 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Silvicultura" "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from MOD13Q1 product, and has 4 bands ("evi", "ndvi", "mir", and "nir").
 
-Usage: `data("cerrado_64K_13classes_6bands")`
+Usage: `data("cerrado_60K_14classes_4bands")`
 
-#### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 9 classes, 6 bands, 2,000 time series
+#### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 1 classes, 6 bands, 2,000 time series
 
 A dataset containing a sits tibble with time series samples from Brazilian Mato Grosso State (Amazon and Cerrado biomes). It has 9 classes ("Cerrado", "Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet").  Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
 
