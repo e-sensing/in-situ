@@ -77,7 +77,7 @@ NULL
 
 
 #' @title Samples of Cerrado biome
-#' @name cerrado_60K_14classes_4bands
+#' @name cerrado_61K_14classes_4bands
 #' @docType data
 #'
 #' @description A dataset containing a sits tibble with time series samples from Brazilian Cerrado biome.
@@ -100,7 +100,7 @@ NULL
 #'   ("evi", "ndvi", "mir", and "nir").
 #'
 #' @usage
-#' data("cerrado_60K_14classes_4bands")
+#' data("cerrado_61K_14classes_4bands")
 #'
 NULL
 
