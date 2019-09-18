@@ -13,7 +13,7 @@
 list_datasets <- function() {
   return(c("amazonia_33K_12classes_4bands",
            "cerrado_124K_16classes_6bands",
-           "cerrado_60K_14classes_4bands",
+           "cerrado_61K_14classes_4bands",
            "br_mt_2K_9classes_6bands",
            "br_mt_1_8K_9classes_6bands",
            "prodes_samples_interpolated",
