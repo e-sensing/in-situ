@@ -35,7 +35,7 @@ Usage: `data("cerrado_124K_16classes_6bands")`
 
 A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 14 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Silvicultura" "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from MOD13Q1 product, and has 4 bands ("evi", "ndvi", "mir", and "nir").
 
-Usage: `data("cerrado_60K_14classes_4bands")`
+Usage: `data("cerrado_61K_14classes_4bands")`
 
 #### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 1 classes, 6 bands, 2,000 time series
 
