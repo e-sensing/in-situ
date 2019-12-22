@@ -6,7 +6,7 @@ Date: 2018-08-08
 Authors@R: c(person('Gilberto', 'Camara', role = c('aut', 'cre'), email = 'gilberto.camara@inpe.br'), 
              person('Rolf', 'Simoes', role = c('aut'), email = 'rolf.simoes@inpe.br'))
 Maintainer: Gilberto Camara <gilberto.camara@inpe.br>
-Description: This project contains in situ data sets used in the e-sensing projec. 
+Description: This project contains in situ data sets used in the e-sensing project. 
     These data sets consists of time series of selected locations which are used to 
     train the statistical learning models used in the e-sensing studies.
 Depends: R (>= 3.4)
