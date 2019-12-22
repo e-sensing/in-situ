@@ -23,7 +23,7 @@ All data sets in the "data" directory are tibbles with satellite image time seri
 
 A dataset containing a sits tibble with 33 K time series samples from Brazilian Amazonia biome. The samples are from the work of Ana Rorato, combined with agricultural data provided by EMBRAPA. There are samples of 12 classes ("Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture", "Savanna", "Savanna_Roraima", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet", "Soy_Sunflower" and "Wetlands"). Each time series covers 12 months (23 data points) from the MOD13Q1 product, in 4 bands ("ndvi", "evi", "nir", "mir").
 
-Usage: `data("amazonia_33K_12classes_4bands")`
+Usage: `data("samples_amazonia")`
 
 #### Cerrado Land Use and Land Cover Samples: 16 classes, 6 bands, 124,000 time series
 
