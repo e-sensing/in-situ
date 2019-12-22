@@ -11,7 +11,7 @@
 #'
 #' @export
 list_datasets <- function() {
-  return(c("samples_amazonia",
+  return(c("amazonia_33K_12classes_4bands",
            "cerrado_124K_16classes_6bands",
            "cerrado_61K_14classes_4bands",
            "br_mt_2K_9classes_6bands",
@@ -21,7 +21,7 @@ list_datasets <- function() {
 }
 
 #' @title Samples of Amazonia biome
-#' @name samples_amazonia
+#' @name amazonia_33K_12classes_4bands
 #' @docType data
 #'
 #' @description A dataset containing a sits tibble with time series samples from Brazilian Amazonia biome.
@@ -43,7 +43,7 @@ list_datasets <- function() {
 #'   in 4 bands ("ndvi", "evi", "nir", "mir").
 #'
 #' @usage
-#' data("samples_amazonia")
+#' data("amazonia_33K_12classes_4bands")
 #'
 NULL
 
