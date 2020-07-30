@@ -25,25 +25,11 @@ A dataset containing a sits tibble with 33 K time series samples from Brazilian 
 
 Usage: `data("amazonia_33K_12classes_4bands")`
 
-#### Cerrado Land Use and Land Cover Samples: 16 classes, 6 bands, 124,000 time series
-
-A dataset containing a sits tibble with 124 K time series samples from Brazilian Cerrado biome. The samples are from many sources. There are samples of 16 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Ciliary_Forest", "Dunas", "Fallow_Cotton", "Millet_Cotton", "Pasture", "Perennial_Crop", "Semi_Perennial_Crop", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from the MOD13Q1 product, and has 6 bands.
-
-Usage: `data("cerrado_124K_16classes_6bands")`
-
 #### Cerrado  Land Use and Land Cover Samples: 14 classes, 4 bands, 61,000 time series
 
 A dataset containing a sits tibble with 64 K time series samples from Brazilian Cerrado biome, with 14 classes ("Araguaia", "Campo_Cerrado", "Cerradao", "Cerrado", "Cerrado_Rupestre", "Dunas", "Silvicultura" "Fallow_Cotton", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet"). Each time series covers 12 months (23 data points) from MOD13Q1 product, and has 4 bands ("evi", "ndvi", "mir", and "nir").
 
 Usage: `data("cerrado_61K_14classes_4bands")`
-
-#### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 1 classes, 6 bands, 2,000 time series
-
-A dataset containing a sits tibble with time series samples from Brazilian Mato Grosso State (Amazon and Cerrado biomes). It has 9 classes ("Cerrado", "Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture", "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet").  Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
-
-Source: Câmara, Gilberto; Picoli, Michelle; Maciel, Adeline; Simoes, Rolf; Santos, Lorena; Andrade, Pedro R; Ferreira, Karine; Begotti, Rodrigo; Sanches, Ieda; Carvalho, Alexandre X Y; Coutinho, Alexandre; Esquerdo, Julio; Antunes, Joao; Arvor, Damien (2019): Land cover change maps for Mato Grosso State in Brazil: 2001-2017 (version 3). PANGAEA, https://doi.org/10.1594/PANGAEA.899706
-
-Usage: `data("br_mt_2K_9classes_6bands")`
 
 #### Mato Grosso State (Brazil) Land Use and Land Cover Samples: 9 classes, 6 bands, 1,800 time series
 
