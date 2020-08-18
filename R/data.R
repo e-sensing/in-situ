@@ -16,8 +16,7 @@ list_datasets <- function() {
            "cerrado_61K_14classes_4bands",
            "br_mt_2K_9classes_6bands",
            "br_mt_1_8K_9classes_6bands",
-           "prodes_samples_interpolated",
-           "prodes_samples_starfm"))
+           "cbers_samples_022024"))
 }
 
 #' @title Samples of Amazonia biome
@@ -160,43 +159,24 @@ NULL
 #'
 NULL
 
-#' @title Sample time-series from the PRODES system using a fusion model.
-#'
-#' @description A dataset containing a tibble with time series sampled on the
-#' brazilian Amazon. The time series come from Landsat 8 Collection images. The
-#' clouds in the images are filled in using the StarFM image fusion model.
-#' StarFM builds a statistical model between MODIS and LANDSAT images at time
-#' t1 which is later applied to MODIS images at time t0. The result is a
-#' prediction of a Landsat 8 image at t0.
-#'
+#' @title Samples for an area of the Brazilian Cerrado using CBERS-4 AWFI image
+#' @name cbers_samples_022024
 #' @docType data
 #' @keywords datasets
-#' @name prodes_samples_starfm
-#' @usage data(prodes_samples_starfm)
-#'
-#' @format A tibble with 1 rows and 7 variables: (a) longitude: East-west coordinate of the time series sample (WGS 84);
-#'   latitude (North-south coordinate of the time series sample in WGS 84), start_date (initial date of the time series),
-#'   end_date (final date of the time series), label (the class label associated to the sample),
-#'   coverage (the name of the coverage associated with the data),
-#'   time_series (list containing a tibble with the values of the time series).
-NULL
-
-#' @title Sample time-series from the PRODES system using interpolation.
-#'
 #' @description A dataset containing a tibble with time series sampled on the
-#' brazilian Amazon. The time series come from Landsat 8 Collection images. The
-#' clouds in the images are filled in using billinear resampled MODIS images
-#' (MOD13Q1 and MYD13Q1) of the closest in terms of place and date.
+#' Brazilian Cerrado. The time series come from a set of CBERS-4 AWFI images
+#' over tile "022024" of the Brazilian Data Cube.
+#' The CBERS-4 AWFI is a sensor with 64 meter resolution.
 #'
-#' @docType data
-#' @keywords datasets
-#' @name prodes_samples_interpolated
-#' @usage data(prodes_samples_interpolated)
-#'
-#' @format A tibble with 1 rows and 7 variables: (a) longitude: East-west coordinate of the time series sample (WGS 84);
-#'   latitude (North-south coordinate of the time series sample in WGS 84), start_date (initial date of the time series),
-#'   end_date (final date of the time series), label (the class label associated to the sample),
-#'   coverage (the name of the coverage associated with the data),
+#' @format A tibble with 1 rows and 7 variables: longitude, latitude, start_date
+#'   (initial date of the time series), end_date (final date of the time series),
+#'   label (the class label associated to the sample),
+#'   cube (the name of the data cube associated with the time series),
 #'   time_series (list containing a tibble with the values of the time series).
+#'   Each time series comprehends one year of 16-day composites
+#'   from AWFI images, comprising 23 data points and 6 bands
+#'   (blue, green, red, nir, ndvi, evi)
+#' @usage data(cbers_samples_022024)
+#'
 NULL
 
