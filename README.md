@@ -45,7 +45,16 @@ A dataset containing a tibble with time series sampled on the Brazilian Cerrado.
 
 Usage: `data(cbers_samples_022024)``
 
-## Description of the "inst/extdata" directory
+#### Samples for an area in Amazonia using SENTINEL-2/2A MSI data
+
+A dataset containing a tibble with time series sampled on the 
+Brazilian Amazonia (Rondonia state). The time series come from a set of SENTINEL-2/2A MSI images
+over tile "T20LKP" of the standard S2 grid. Each time series comprehends one year of composites of S2 and S2A images, comprising 36 data points and 11 bands and indices (B02, B03, B07, B08, B8A, B11, B12, evi, ndvi, ndmi, savi). This data set should be used in conjunction with the Sentinel-2 images available in the "extdata" directory (see below)
+
+
+Usage:`data(samples_S2_T20LKP_2018_2019)`
+
+## Description of the "extdata" directory
 ## 
 #### Sinop EVI and NDVI images for year 2014
 
@@ -63,6 +72,12 @@ Usage:
 TIF files containing 23 EVI and NDVI CBERS-4 AWFI images for the period 2018-08-29 to 2019-08-13, covering the agricultural year in the Brazilian Cerrado near the city of Barreiras (Bahia). These files with associated timeline are used to test and validate the algorithms in the R package "sits". 
 
 Usage: See the demo `classify_cbers_stack` in package `sits`. 
+
+#### Sentinel-2 images for tile "T20LKP" from 2018 to 2019
+
+TIF files containing 36 SENTINEL-2/2A images for the period 2018-08-12 to 2019-07-28, covering the agricultural year in the Brazilian Amazonia in the state of Rondonia near the "Igarapé Lage" Indigenous Land. These files with associated timeline are used to test and validate the algorithms in the R package "sits". 
+
+Usage: See the demo `classify_sentinel2` in package `sits`. 
 					   
 #### PRODES 2001 Amazonia forest mask
 
