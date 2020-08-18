@@ -39,8 +39,31 @@ Source: Câmara, Gilberto; Picoli, Michelle; Maciel, Adeline; Simoes, Rolf; Sant
 
 Usage: `data("br_mt_1_8K_9classes_6bands")`
 
-## Description of the "inst/extdata" directory
+#### Samples for an area of the Brazilian Cerrado using CBERS-4 AWFI image
 
+A dataset containing a tibble with time series sampled on the Brazilian Cerrado. The time series come from a set of CBERS-4 AWFI images over a subset of tile "022024" of cube "CB4_64_16D_STK" of the Brazilian Data Cube. CBERS-4 AWFI is a sensor with 64 meter resolution. Each time series has one year of 16-day composites from AWFI images, comprising 23 data points and 6 bands (blue, green, red, nir, ndvi, evi)
+
+Usage: `data(cbers_samples_022024)``
+
+## Description of the "inst/extdata" directory
+## 
+#### Sinop EVI and NDVI images for year 2014
+
+TIF files containing 23 EVI and NDVI MOD13Q1 images for the period 2013-09-14 to 2014-08-29, covering the agricultural year in the city of Sinop (Mato Grosso). These files with associated timeline are used to test and validate the algorithms in the R package "sits". Please see the demo "classify_raster_rfor " in the "sits" package.
+
+Usage: 
+`evi.tif <- system.file("extdata/Sinop", "Sinop_evi_2014.tif", package = "inSitu")`
+
+`ndvi.tif <- system.file("extdata/Sinop", "Sinop_ndvi_2014.tif", package = "inSitu")`
+
+`timeline <- system.file("extdata/Sinop", "timeline_2014.txt", package = "inSitu")`
+
+#### Brazilian Cerrado EVI and NDVI images for year 2018
+
+TIF files containing 23 EVI and NDVI CBERS-4 AWFI images for the period 2018-08-29 to 2019-08-13, covering the agricultural year in the Brazilian Cerrado near the city of Barreiras (Bahia). These files with associated timeline are used to test and validate the algorithms in the R package "sits". 
+
+Usage: See the demo `classify_cbers_stack` in package `sits`. 
+					   
 #### PRODES 2001 Amazonia forest mask
 
 A TIF file containing a mask of the areas marked as forest by the Amazon deforestation monitoring PRODES project for the year 2001. This mask is useful to set the initial stage of forest areas for studies that use the MODIS data, that starts in 2000. All areas identified as "forest" in the analysis of MODIS data which are outside the forest mask should be marked as "secondary vegetation". 
@@ -90,11 +113,3 @@ L. M. & Mello, M. P. Remote sensing time series to evaluate direct land
 use change of recent expanded sugarcane crop in Brazil. Sustainability 4,
 574–585 (2012).
 
-#### Sinop EVI and NDVI images for year 2014
-
-TIF files containing 23 EVI and NDVI MOD13Q1 images for the period 2013-09-14 to 2014-08-29, covering the agricultural year in the city of Sinop (Mato Grosso). These files with associated timeline are used to test and validate the algorithms in the R package "sits". 
-
-Usage: 
-`evi.tif <- system.file("extdata/Sinop", "Sinop_evi_2014.tif", package = "inSitu")`
-`ndvi.tif <- system.file("extdata/Sinop", "Sinop_ndvi_2014.tif", package = "inSitu")`
-`timeline <- system.file("extdata/Sinop", "timeline_2014.txt", package = "inSitu")`
