@@ -9,7 +9,7 @@ Maintainer: Gilberto Camara <gilberto.camara@inpe.br>
 Description: This project contains in situ data sets used in the e-sensing project. 
     These data sets consists of time series of selected locations which are used to 
     train the statistical learning models used in the e-sensing studies.
-Depends: R (>= 3.4)
+Depends: R (>= 4.0)
 URL: https://github.com/e-sensing/in-situ/
 BugReports: https://github.com/e-sensing/in-situ/issues
 License: GPL-2 | file LICENSE
