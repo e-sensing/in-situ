@@ -80,20 +80,11 @@ NULL
 #' @description A dataset containing a sits tibble with time series samples from Brazilian
 #' Mato Grosso State (Amazon and Cerrado biomes).
 #'
-#' @format A \code{sits} tibble with 1.8K samples. A \code{sits} tibble contains the following meta-data:
-#'   longitude (East-west coordinate of the time series sample in WGS 84),
-#'   latitude (North-south coordinate of the time series sample in WGS 84),
-#'   start_date (initial date of the time series),
-#'   end_date (final date of the time series),
-#'   label (the class label associated to the sample),
-#'   coverage (the name of the coverage associated with the data), and
-#'   time_series ( list containing a tibble with the values of the time series).
-#'
-#'   The samples are from many sources. It has 9 classes ("Cerrado",
+#' @format A \code{sits} tibble with 1.8K samples and 9 classes ("Cerrado",
 #'   "Fallow_Cotton", "Forest", "Millet_Cotton", "Pasture",
 #'   "Soy_Corn", "Soy_Cotton", "Soy_Fallow", "Soy_Millet").
-#'
-#'   Each time series comprehends 12 months (23 data points) from MOD13Q1 product, and has 6 bands.
+#'    Each time series comprehends 12 months (23 data points)
+#'    from MOD13Q1 product, with 6 bands.
 #'
 #' @usage
 #' data("br_mt_1_8K_9classes_6bands")
@@ -117,7 +108,9 @@ NULL
 #'   Each time series comprehends one year of 16-day composites
 #'   from AWFI images, comprising 23 data points and 6 bands
 #'   (blue, green, red, nir, ndvi, evi)
-#' @usage data(cbers_samples_022024)
+#'
+#' @usage
+#' data(cbers_samples_022024)
 #'
 NULL
 
@@ -137,6 +130,8 @@ NULL
 #'   Each time series comprehends one year of composites of S2 and S2A images,
 #'   comprising 36 data points and 11 bands and indices
 #'   (B02, B03, B07, B08, B8A, B11, B12, evi, ndvi, ndmi, savi)
-#' @usage data(samples_S2_T20LKP_2018_2019)
+#'
+#' @usage
+#' data(samples_S2_T20LKP_2018_2019)
 #'
 NULL
